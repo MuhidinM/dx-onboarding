@@ -14,6 +14,21 @@ export default function ProductPage() {
     setSelectedProduct(product);
   };
 
+  const handleOpenLink = (url: string | undefined) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
+  const handleDownload = (file: string | undefined) => {
+    const filePath = `/slides/${file}`;
+
+    const link = document.createElement("a");
+    link.href = filePath;
+    link.download = "presentation.pptx";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const handleBackToList = () => {
     setSelectedProduct(null);
   };
@@ -41,12 +56,22 @@ export default function ProductPage() {
                   className="rounded-lg object-cover w-full"
                 />
                 <div className="flex-grow overflow-auto mb-4"></div>
-                <Button className="bg-[#00adef]">
-                  <Download className="mr-2 h-4 w-4" /> Download PDF
-                </Button>
-                <Button className="bg-[#00adef]">
-                  <ExternalLink className="mr-2 h-4 w-4" /> Visit Site
-                </Button>
+                {selectedProduct.file && (
+                  <Button
+                    onClick={() => handleDownload(selectedProduct.file)}
+                    className="bg-[#00adef]"
+                  >
+                    <Download className="mr-2 h-4 w-4" /> Download PPT
+                  </Button>
+                )}
+                {selectedProduct.link && (
+                  <Button
+                    onClick={() => handleOpenLink(selectedProduct.link)}
+                    className="bg-[#00adef]"
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" /> Visit Site
+                  </Button>
+                )}
               </div>
               <div className="w-full md:w-2/3 flex flex-col">
                 <div className="flex-grow overflow-auto mb-4">
@@ -57,7 +82,9 @@ export default function ProductPage() {
                 <div className="flex flex-col sm:flex-row justify-between items-end mt-4">
                   <div className=""></div>
                   <div className="z-10 bg-orange-100 text-orange-800 text-xs sm:text-sm font-semibold py-1 px-2 sm:py-1.5 sm:px-3 rounded-full inline-block font-['Open Sans'] shadow-md">
-                    Transforming Lives Through Cooperation
+                    {selectedProduct.moto
+                      ? selectedProduct.moto
+                      : " Bank Smarter, Live Better"}
                   </div>
                 </div>
               </div>

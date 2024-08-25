@@ -43,7 +43,7 @@ const CooperativeVision = () => {
             </p>
             <div className="flex justify-end">
               <div className="bg-orange-100 text-orange-800 text-xs sm:text-sm font-semibold py-1 px-2 sm:py-1.5 sm:px-3 rounded-full inline-block font-['Open Sans'] shadow-md">
-                Transforming Lives Through Cooperation
+                Empowering Community, Transforming Lives
               </div>
             </div>
           </div>
