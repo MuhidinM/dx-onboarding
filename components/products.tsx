@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { House } from "lucide-react";
+import { Download, ExternalLink, House, Sparkles } from "lucide-react";
 import { Product } from "@/types";
 import { products } from "@/constants";
 
@@ -20,16 +20,19 @@ export default function ProductPage() {
 
   if (selectedProduct) {
     return (
-      <div className="container mx-auto flex flex-col h-[655px]">
+      <div className="flex flex-col h-[655px]">
         <main className="flex-grow overflow-auto">
-          <Card className="h-[540px]">
+          <Card className="h-full flex flex-col">
             <CardHeader>
               <CardTitle className="text-2xl mb-4">
                 {selectedProduct.name}
               </CardTitle>
             </CardHeader>
-            <CardContent className="flex flex-col md:flex-row gap-6">
-              <div className="w-full md:w-1/3">
+            <CardContent className="relative flex-grow flex flex-col md:flex-row gap-6">
+              <div className="absolute bottom-0 right-0 text-orange-100 w-12 h-12 sm:w-16 sm:h-16">
+                <Sparkles className="w-full h-full" />
+              </div>
+              <div className="w-full md:w-1/3 flex flex-col space-y-4">
                 <Image
                   src={selectedProduct.imageUrl}
                   alt={selectedProduct.name}
@@ -37,18 +40,33 @@ export default function ProductPage() {
                   height={300}
                   className="rounded-lg object-cover w-full"
                 />
+                <div className="flex-grow overflow-auto mb-4"></div>
+                <Button className="bg-[#00adef]">
+                  <Download className="mr-2 h-4 w-4" /> Download PDF
+                </Button>
+                <Button className="bg-[#00adef]">
+                  <ExternalLink className="mr-2 h-4 w-4" /> Visit Site
+                </Button>
               </div>
-              <div className="w-full md:w-2/3">
-                <p className="text-muted-foreground">
-                  {selectedProduct.description}
-                </p>
+              <div className="w-full md:w-2/3 flex flex-col">
+                <div className="flex-grow overflow-auto mb-4">
+                  <p className="text-muted-foreground">
+                    {selectedProduct.description}
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row justify-between items-end mt-4">
+                  <div className=""></div>
+                  <div className="z-10 bg-orange-100 text-orange-800 text-xs sm:text-sm font-semibold py-1 px-2 sm:py-1.5 sm:px-3 rounded-full inline-block font-['Open Sans'] shadow-md">
+                    Transforming Lives Through Cooperation
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
         </main>
         <nav className="mt-8">
           <ScrollArea className="w-full whitespace-nowrap rounded-md border bg-white">
-            <div className="flex w-max justify-center items-center">
+            <div className="flex w-max justify-center items-center hover:cursor-pointer">
               <div className="p-6 bg-white" onClick={handleBackToList}>
                 <House className="h-6 w-6 text-[#00adef]" />
               </div>
@@ -79,15 +97,15 @@ export default function ProductPage() {
   }
 
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {products.map((product) => (
           <Card
             key={product.id}
             className="cursor-pointer shadow-lg"
             onClick={() => handleProductSelect(product)}
           >
-            <CardContent className="p-2 h-[200px] flex items-center">
+            <CardContent className="p-2 h-[206px] flex items-center">
               <Image
                 src={product.imageUrl}
                 alt={product.name}
