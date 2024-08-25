@@ -4,7 +4,7 @@ const CooperativeVision = () => {
   return (
     <section className="">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative bg-white dark:bg-gray-600 rounded-3xl shadow-xl p-4 sm:p-6 overflow-hidden">
+        <div className="relative bg-white dark:bg-gray-600 rounded-lg shadow-xl p-4 sm:p-6 overflow-hidden">
           <Quote className="absolute top-2 left-2 text-blue-100 w-6 h-6 sm:w-8 sm:h-8" />
           <div className="absolute bottom-0 right-0 text-orange-100 w-12 h-12 sm:w-16 sm:h-16">
             <Sparkles className="w-full h-full" />

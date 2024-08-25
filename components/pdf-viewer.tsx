@@ -43,7 +43,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ fileUrl }) => {
   const { GoToPreviousPage, GoToNextPage } = pageNavigationPluginInstance;
 
   return (
-    <div className="pdf-viewer-container relative w-full h-full bg-white rounded-3xl shadow-xl overflow-hidden">
+    <div className="pdf-viewer-container relative w-full h-full bg-white rounded-lg shadow-xl overflow-hidden">
       <Worker
         workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}
       >
