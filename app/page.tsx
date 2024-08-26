@@ -15,7 +15,7 @@ const Page = () => {
         <div className="space-y-4">
           <CooperativeVision />
           <div className="h-[330px] mx-auto">
-            <PDFViewer fileUrl="/test2.pdf" />
+            <PDFViewer fileUrl="/THE STORY OF FATIMA.pdf" />
           </div>
         </div>
         <div className="">

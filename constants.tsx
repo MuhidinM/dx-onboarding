@@ -8,15 +8,15 @@ export const products: Product[] = [
       <>
         <p className="mb-2">
           The key to overcoming poverty lies in the power of cooperation and
-          cooperatives", as envisioned by Obbo Haile Gebre Lube, the founding
-          father of CoopBank. He recognized the struggles and neglect faced by
-          rural and underprivileged communities.
+          cooperatives&quot;, as envisioned by Obbo Haile Gebre Lube, the
+          founding father of CoopBank. He recognized the struggles and neglect
+          faced by rural and underprivileged communities.
         </p>
         <p>
           Inspired by his vision, we believe that a better tomorrow for our
           community rests in the hands of young innovators from these very
-          communities. That's why we are committed to cooperating with them to
-          transform lives and create lasting change.
+          communities. That&apos;s why we are committed to cooperating with them
+          to transform lives and create lasting change.
         </p>
       </>
     ),
@@ -86,7 +86,7 @@ export const products: Product[] = [
     link: "http://learn.coopbank.local/",
     file: "",
     moto: "",
-    imageUrl: "/products/coopAmbition.webp",
+    imageUrl: "/products/coopAmbition.jpg",
   },
   {
     id: 9,
@@ -96,5 +96,14 @@ export const products: Product[] = [
     file: "",
     moto: "",
     imageUrl: "/products/VSLA-image.png",
+  },
+  {
+    id: 10,
+    name: "Coop App",
+    description: "",
+    link: "",
+    file: "",
+    moto: "",
+    imageUrl: "/products/coopApp.jpg",
   },
 ];
