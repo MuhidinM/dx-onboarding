@@ -7,6 +7,7 @@ import {
   Tooltip,
   Plugin,
   RenderViewer,
+  Position, // Import Position enum
 } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import {
@@ -57,7 +58,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ fileUrl }) => {
           <GoToPreviousPage>
             {(props: RenderGoToPageProps) => (
               <Tooltip
-                position="BottomCenter"
+                position={Position.BottomCenter} // Use Position.BottomCenter enum
                 target={
                   <MinimalButton onClick={props.onClick}>
                     <Icon size={16}>
@@ -76,7 +77,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ fileUrl }) => {
           <GoToNextPage>
             {(props: RenderGoToPageProps) => (
               <Tooltip
-                position="BottomCenter"
+                position={Position.BottomCenter} // Use Position.BottomCenter enum
                 target={
                   <MinimalButton onClick={props.onClick}>
                     <Icon size={16}>
