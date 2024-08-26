@@ -18,7 +18,7 @@ const Page = () => {
             <PDFViewer fileUrl="/THE STORY OF FATIMA.pdf" />
           </div>
         </div>
-        <div className="">
+        <div className="h-full">
           <ProductPage />
         </div>
       </div>

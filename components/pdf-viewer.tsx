@@ -66,7 +66,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ fileUrl }) => {
                     </Icon>
                   </MinimalButton>
                 }
-                content={() => "Previous page"}
+                content={() => ""}
                 offset={{ left: 0, top: 8 }}
               />
             )}
@@ -85,7 +85,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ fileUrl }) => {
                     </Icon>
                   </MinimalButton>
                 }
-                content={() => "Next page"}
+                content={() => ""}
                 offset={{ left: 0, top: 8 }}
               />
             )}

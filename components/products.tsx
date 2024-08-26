@@ -35,7 +35,7 @@ export default function ProductPage() {
 
   if (selectedProduct) {
     return (
-      <div className="flex flex-col h-[655px]">
+      <div className="flex flex-col h-[680px]">
         <main className="flex-grow overflow-auto">
           <Card className="h-full flex flex-col">
             <CardHeader>
@@ -125,7 +125,7 @@ export default function ProductPage() {
 
   return (
     <div className="">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
         {products.slice(0, 9).map((product) => (
           <Card
             key={product.id}
