@@ -35,7 +35,7 @@ export default function ProductPage() {
 
   if (selectedProduct) {
     return (
-      <div className="flex flex-col h-[655px]">
+      <div className="flex flex-col h-[680px]">
         <main className="flex-grow overflow-auto">
           <Card className="h-full flex flex-col">
             <CardHeader>
@@ -132,7 +132,7 @@ export default function ProductPage() {
             className="cursor-pointer shadow-lg"
             onClick={() => handleProductSelect(product)}
           >
-            <CardContent className="p-2 h-[206px] flex items-center">
+            <CardContent className="p-2 h-[215px] flex items-center">
               <Image
                 src={product.imageUrl}
                 alt={product.name}
