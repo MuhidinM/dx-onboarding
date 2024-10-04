@@ -8,9 +8,6 @@ import React from "react";
 const Page = () => {
   return (
     <div className="container flex flex-col h-screen items-center justify-center">
-      {/* <div className="flex items-center justify-center m-4">
-        <Image alt="" src={"/logo.svg"} width={100} height={100} />
-      </div> */}
       <div className="grid grid-cols-2 gap-4">
         <div className="space-y-4">
           <CooperativeVision />

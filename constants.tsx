@@ -5,7 +5,7 @@ export const products: Product[] = [
     id: 1,
     name: "Coop Stream",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           Coop Stream is CoopBank&apos;s innovative loan origination app that
           automates the entire loan processing workflow. This app simplifies and
@@ -19,7 +19,7 @@ export const products: Product[] = [
           experience from application to approval, reflecting CoopBank&apos;s
           commitment to leveraging technology for better financial services.
         </p>
-      </>
+      </div>
     ),
     link: "",
     file: "",
@@ -30,7 +30,7 @@ export const products: Product[] = [
     id: 2,
     name: "Debbo",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           The Deboo Crowdfunding System is a web-based platform offered by
           Cooperative Bank of Oromia. It enables individuals and organizations
@@ -43,10 +43,10 @@ export const products: Product[] = [
           entrepreneurial ventures, community initiatives, and more. You can
           create campaigns to raise funds for a wide range of purposes.
         </p>
-      </>
+      </div>
     ),
     link: "https://debo.coopbankoromiasc.com/",
-    file: "",
+    file: "Deboo.pptx",
     moto: "",
     imageUrl: "/products/debbo.png",
   },
@@ -54,7 +54,7 @@ export const products: Product[] = [
     id: 3,
     name: "Diaspora",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           Diaspora Banking Accounts allow Diasporas who resides and works
           outside the country to maintain and perform domestic and international
@@ -64,7 +64,7 @@ export const products: Product[] = [
           The bank provides business and investment loan along with expertise
           free consultancy services on different opportunities.
         </p>
-      </>
+      </div>
     ),
     link: "https://diasporabanking.coopbankoromiasc.com/",
     file: "",
@@ -75,7 +75,7 @@ export const products: Product[] = [
     id: 4,
     name: "Michu",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           Michu is CoopBank&apos;s groundbreaking digital lending platform, one
           of the first in Ethiopia to offer loans without requiring collateral.
@@ -90,7 +90,7 @@ export const products: Product[] = [
           assets, empowering more people across Ethiopia to access credit and
           support their financial goals.
         </p>
-      </>
+      </div>
     ),
     link: "https://michu.coopbankoromiasc.com",
     file: "",
@@ -99,9 +99,9 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    name: "Souq Pass",
+    name: "SouqPass",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           Souqpass is a financial platform powered by Cooperative Bank of
           Oromia, dedicated to providing innovative financial solutions tailored
@@ -114,10 +114,10 @@ export const products: Product[] = [
           business&apos;s revenue stream, providing flexible funding solutions
           that adapt to your income flow.
         </p>
-      </>
+      </div>
     ),
     link: "https://souqpass.coopbankoromiasc.com/",
-    file: "",
+    file: "souqpass.pptx",
     moto: "",
     imageUrl: "/products/souqpass.png",
   },
@@ -125,7 +125,7 @@ export const products: Product[] = [
     id: 6,
     name: "Coop Recon",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           Coop Recon is a powerful tool designed by CoopBank to streamline
           reconciliation processes both within the bank and with external banks
@@ -140,7 +140,7 @@ export const products: Product[] = [
           financial accuracy and fosters smoother interactions with external
           banking partners.
         </p>
-      </>
+      </div>
     ),
     link: "",
     file: "",
@@ -151,7 +151,7 @@ export const products: Product[] = [
     id: 7,
     name: "Equb",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           The Equb app by CoopBank digitizes the traditional Ethiopian practice
           of rotating savings and credit. It allows users to easily join or
@@ -163,7 +163,7 @@ export const products: Product[] = [
           and convenient. Users can manage their Equb participation seamlessly,
           with notifications and tracking features enhancing the experience.
         </p>
-      </>
+      </div>
     ),
     link: "",
     file: "",
@@ -174,7 +174,7 @@ export const products: Product[] = [
     id: 8,
     name: "Coop Ambition",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           Coop Ambition is CoopBank&apos;s dedicated e-learning platform,
           designed to provide employees with access to a wide range of
@@ -190,7 +190,7 @@ export const products: Product[] = [
           that its workforce remains equipped to meet the evolving demands of
           the banking industry.
         </p>
-      </>
+      </div>
     ),
     link: "http://learn.coopbank.local/",
     file: "",
@@ -201,13 +201,13 @@ export const products: Product[] = [
     id: 9,
     name: "VSLA",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           Village Savings and Loans Associations (VSLAs) empower participants to
           increase access and control over resources and use collective power to
           overcome social and financial barriers.
         </p>
-      </>
+      </div>
     ),
     link: "",
     file: "",
@@ -218,7 +218,7 @@ export const products: Product[] = [
     id: 10,
     name: "Coop App",
     description: (
-      <>
+      <div>
         <p className="mb-2">
           The Mobile Banking Application for CoopBank offers customers a
           convenient way to manage their finances on the go. With features like
@@ -231,7 +231,7 @@ export const products: Product[] = [
           that customers have a reliable and easy-to-use platform to access
           their accounts anytime, anywhere.
         </p>
-      </>
+      </div>
     ),
     link: "",
     file: "",
