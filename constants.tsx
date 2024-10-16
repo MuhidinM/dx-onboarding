@@ -73,29 +73,20 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    name: "Michu",
+    name: "VSLA",
     description: (
       <div>
         <p className="mb-2">
-          Michu is CoopBank&apos;s groundbreaking digital lending platform, one
-          of the first in Ethiopia to offer loans without requiring collateral.
-          This innovative service provides quick and accessible financing
-          options to customers, making it easier for individuals and businesses
-          to meet their financial needs.
-        </p>
-        <p>
-          As a non-collateral lending platform, Michu leverages digital
-          technology to assess creditworthiness and disburse loans swiftly. It
-          opens up new opportunities for those who may not have traditional
-          assets, empowering more people across Ethiopia to access credit and
-          support their financial goals.
+          Village Savings and Loans Associations (VSLAs) empower participants to
+          increase access and control over resources and use collective power to
+          overcome social and financial barriers.
         </p>
       </div>
     ),
-    link: "https://michu.coopbankoromiasc.com",
+    link: "",
     file: "",
     moto: "",
-    imageUrl: "/products/MICHU.png",
+    imageUrl: "/products/VSLA-image.png",
   },
   {
     id: 5,
@@ -107,7 +98,6 @@ export const products: Product[] = [
           Oromia, dedicated to providing innovative financial solutions tailored
           to meet the evolving needs of businesses and individuals.
         </p>
-
         <p className="">
           Souqpass offers Revenue-Based Financing (RBF) designed to support
           businesses&apos; growth aspirations. RBF aligns with your
@@ -149,6 +139,30 @@ export const products: Product[] = [
   },
   {
     id: 7,
+    name: "CooPayRoll",
+    description: (
+      <div>
+        <p className="mb-2">
+          Our payroll system is a cutting-edge Software as a Service (SaaS)
+          solution designed to automate and simplify payroll processes for
+          businesses of all sizes. With its hyper-customizable features, the
+          system allows organizations to input employee data once and process
+          payroll with just a few clicks, drastically reducing time spent on
+          repetitive tasks. It offers a flexible and scalable platform that
+          adapts to both small and large enterprises, ensuring accuracy,
+          compliance, and efficiency. Whether handling basic payroll tasks or
+          complex pay structures, our system empowers businesses to streamline
+          operations, cut costs, and focus on growth.
+        </p>
+      </div>
+    ),
+    link: "",
+    file: "",
+    moto: "",
+    imageUrl: "/products/coopayroll.png",
+  },
+  {
+    id: 8,
     name: "Equb",
     description: (
       <div>
@@ -171,7 +185,7 @@ export const products: Product[] = [
     imageUrl: "/products/equb-image.webp",
   },
   {
-    id: 8,
+    id: 9,
     name: "Coop Ambition",
     description: (
       <div>
@@ -198,24 +212,81 @@ export const products: Product[] = [
     imageUrl: "/products/coopAmbition.jpg",
   },
   {
-    id: 9,
-    name: "VSLA",
+    id: 10,
+    name: "Michu",
     description: (
       <div>
         <p className="mb-2">
-          Village Savings and Loans Associations (VSLAs) empower participants to
-          increase access and control over resources and use collective power to
-          overcome social and financial barriers.
+          Michu is CoopBank&apos;s groundbreaking digital lending platform, one
+          of the first in Ethiopia to offer loans without requiring collateral.
+          This innovative service provides quick and accessible financing
+          options to customers, making it easier for individuals and businesses
+          to meet their financial needs.
+        </p>
+        <p>
+          As a non-collateral lending platform, Michu leverages digital
+          technology to assess creditworthiness and disburse loans swiftly. It
+          opens up new opportunities for those who may not have traditional
+          assets, empowering more people across Ethiopia to access credit and
+          support their financial goals.
+        </p>
+      </div>
+    ),
+    link: "https://michu.coopbankoromiasc.com",
+    file: "",
+    moto: "",
+    imageUrl: "/products/MICHU.png",
+  },
+  {
+    id: 11,
+    name: "Furtuu",
+    description: (
+      <div>
+        <p className="mb-2">
+          Furtuu, meaning Key in Afaan Oromo, is comprehensive supply chain
+          system designed to onboard all stakeholders in the farming ecosystem.
+          This innovative solution not only addresses uncollateralized, in-kind
+          loans for farmers but also provides market privileges for various
+          MSMEs. It is open to anyone looking to finance farmers with a
+          feasibility approach through its versatile functionality in one
+          platform.
+        </p>
+        <p>
+          Input Financing Seed, Fertilizers, and Chemicals Market Linkage
+          Provide Buyers to Farmer. Advisory Services Better Farming Practices,
+          New Agricultural Technology Traceability End to End traceability
+          Opening a Door to export Market
         </p>
       </div>
     ),
     link: "",
     file: "",
     moto: "",
-    imageUrl: "/products/VSLA-image.png",
+    imageUrl: "/products/Furtuu.png",
   },
   {
-    id: 10,
+    id: 12,
+    name: "Farm pass",
+    description: (
+      <div>
+        <p className="mb-2">
+          Coopbank Farm pass powered by Mastercard&apos;s renowned Community
+          Pass platform, it is an Eco-system that seamlessly connects farmers,
+          cooperatives, aggregators, buyers, agricultural input/service
+          providers, financial institutions, and other service providers.
+          Language support in : Afaan Oromo Amharic and English * Farmers do not
+          directly use the platform, they access it through their Cooperative,
+          Cooperative Agents or any other organization they are under.
+        </p>
+      </div>
+    ),
+    link: "",
+    file: "",
+    moto: "",
+    imageUrl: "/products/Farmpass.jpg",
+  },
+  {
+    id: 13,
     name: "Coop App",
     description: (
       <div>
