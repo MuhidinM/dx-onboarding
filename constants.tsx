@@ -143,22 +143,16 @@ export const products: Product[] = [
     description: (
       <div>
         <p className="mb-2">
-          Our payroll system is an advanced Software as a Service (SaaS)
-          platform built to revolutionize how businesses handle payroll. Whether
-          you&apos;re managing a small team or a large workforce, the system is
-          hyper-customizable, allowing you to tailor features according to your
-          specific needs. By inputting employee data once, you can automate the
-          entire payroll process with just a few clicks, minimizing the time and
-          effort spent on repetitive tasks every month. The system is designed
-          to handle complex pay structures, tax calculations, and compliance
-          requirements seamlessly, ensuring accuracy and reducing errors. It
-          also supports multiple payment schedules, integrates with your
-          existing HR and accounting software, and provides real-time reporting
-          and analytics to give you full control over your payroll operations.
-          Scalable and adaptable, our system grows with your business, offering
-          a reliable solution for enterprises of all sizes, enabling faster
-          processing, reduced administrative overhead, and a more efficient way
-          to manage employee compensation
+          Our payroll system is a cutting-edge Software as a Service (SaaS)
+          solution designed to automate and simplify payroll processes for
+          businesses of all sizes. With its hyper-customizable features, the
+          system allows organizations to input employee data once and process
+          payroll with just a few clicks, drastically reducing time spent on
+          repetitive tasks. It offers a flexible and scalable platform that
+          adapts to both small and large enterprises, ensuring accuracy,
+          compliance, and efficiency. Whether handling basic payroll tasks or
+          complex pay structures, our system empowers businesses to streamline
+          operations, cut costs, and focus on growth.
         </p>
       </div>
     ),
